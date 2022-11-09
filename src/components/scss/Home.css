@@ -1,0 +1,14 @@
+.Home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f8f5d6;
+}
+.Home_Main {
+  position: relative;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=Home.css.map */

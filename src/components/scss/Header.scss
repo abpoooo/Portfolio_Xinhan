@@ -1,0 +1,106 @@
+
+.Header {
+  display: flex;
+  background-color: #e1dad9;
+  color: #4d3a59;
+  flex-direction: row;
+  justify-content: space-around;
+  //position: -webkit-sticky; /* Safari */
+  //position: absolute;
+  //position: sticky;
+  //top: 0;
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      //transform: translateY(0);
+    }
+
+  }
+  &_logo {
+    //height: 92px;
+    //width: 62px;
+
+  }
+
+  .size {
+    height: 92px;
+    width: 62px;
+  }
+
+  .size:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+  &_content {
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      justify-content: space-between;
+
+      li {
+        display: flex;
+        font-weight: bold;
+        color: #4d3a59;
+        line-height: 92px;
+        padding: 0 1em;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: transparent;
+
+      }
+
+      //li:after{
+      //  transform-origin: bottom right;
+      //  transition: transform 0.25s ease-out;
+      //}
+      li:hover {
+        cursor: pointer;
+        //transform: scale(1.2);
+        transition: transform 0.2s ease-out;
+        transform: rotate(-5deg) scale(1.1) ;
+
+
+
+        text-decoration: underline rgba(183,97,137,1) 2px;
+        text-underline-offset: 5px;
+        //transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+
+    }
+
+  }
+
+  &_icons {
+
+    display: flex;
+    float: left;
+    position: relative;
+    height: 92px;
+    border: 0px;
+  }
+
+  .iconSize {
+
+    height: 60px;
+    width: 40px;
+  }
+
+  .iconSize:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
