@@ -1,63 +1,67 @@
 .Content {
   margin: 0;
+  position: relative;
+  padding: 0 20vw;
 }
-.Content_module1 {
-  display: flex;
-  flex-direction: row;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  padding-bottom: 10rem;
-  background: #f8f5d6;
-  min-height: 40vh;
-  justify-content: space-around;
-}
-.Content_module1_Left {
+.Content_1 {
   display: flex;
   flex-direction: column;
-  color: #4831d4;
+  min-height: 100vh;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
 }
-.Content_module1_Left h1 {
-  font-size: 4.2rem;
+.Content_1_module1 {
+  display: flex;
+  flex-direction: row;
+  background: #f8f5d6;
+  justify-content: space-around;
 }
-.Content_module1_Left h2 {
-  font-size: 1rem;
-  line-height: 1.4;
+.Content_1_module1_Left {
+  display: flex;
+  flex-direction: column;
+  color: #45465e;
+  padding-right: 5vw;
 }
-.Content_module1_Left_Words {
+.Content_1_module1_Left h1 {
+  font-size: 6.2rem;
+}
+.Content_1_module1_Left h2 {
+  font-size: 2rem;
+  line-height: 1;
+}
+.Content_1_module1_Left_Words {
   padding-top: 1rem;
   display: flex;
   flex-direction: column;
   color: black;
 }
-.Content_module1_Left_Words span {
-  color: #4831d4;
+.Content_1_module1_Left_Words span {
+  color: #45465e;
+  font-size: 30px;
 }
-.Content_module1_Middle {
-  padding-top: 2rem;
+.Content_1_module1_Middle {
+  margin-top: 10vh;
   width: inherit;
   display: block;
   height: inherit;
-  margin-top: 2.435em;
   background-size: cover;
   background-position-x: center;
-  margin-left: -2.2em;
-  z-index: 1;
   opacity: 1;
 }
-.Content_module1_Middle:hover {
+.Content_1_module1_Middle:hover {
   cursor: pointer;
   opacity: 0.99;
   z-index: 5;
 }
-.Content_module1_Right {
+.Content_1_module1_Right {
   align-items: center;
-  padding-top: 3rem;
   font-size: 80px;
+  padding-top: 20vh;
 }
-.Content_module1_Slide {
+.Content_1_module1_Slide {
   position: relative;
 }
-.Content_module1_Slide_top {
+.Content_1_module1_Slide_top {
   position: fixed;
   bottom: 40px;
   right: 25px;
@@ -72,13 +76,13 @@
   animation: movebtn 3s ease-in-out infinite;
   transition: all 0.5s ease-in-out;
 }
-.Content_module1_Slide button:hover {
+.Content_1_module1_Slide button:hover {
   animation: none;
   background: #fff;
   color: #551B54;
   border: 2px solid #551B54;
 }
-.Content_module1_Slide ul li {
+.Content_1_module1_Slide ul li {
   list-style-type: none;
 }
 @keyframes movebtn {
@@ -101,9 +105,10 @@
 .Content_module2 {
   display: flex;
   flex-direction: row;
-  min-height: 75vh;
+  min-height: 100vh;
   justify-content: space-around;
   padding-top: 10rem;
+  gap: 10vw;
 }
 .Content_module2 h1 {
   margin: 0;
@@ -111,7 +116,7 @@
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -0.03em;
-  color: #4831d4;
+  color: #45465e;
 }
 .Content_module2_Left {
   display: block;

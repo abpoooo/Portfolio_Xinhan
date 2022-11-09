@@ -104,66 +104,77 @@ export const Content = () => {
     );
     return (
         <div className='Content'>
-            <div className='Content_module1'>
-                <div className='Content_module1_Left'>
-                    {/*    my intro*/}
-                    <h1>
-                        Full Stack Developer
-                    </h1>
-                    <h2>
-                        Craft solid and scalable frontend products with great user experiences
-                    </h2>
-                    <h2>
-                        Precise and decent backend database structure with 100% enthusiasm
-                    </h2>
-                    <div className='Content_module1_Left_Words'>
-                        <span>Front end developer who writes clean, elegant and efficient codes</span>
+            <div className='Content_1'>
+                <div className='Content_1_module1'>
+                    <div className='Content_1_module1_Left'>
+                        {/*    my intro*/}
+                        <h1>
+                            Full Stack Developer
+                        </h1>
+                        <h2>
+                            Craft solid and scalable frontend products
+                            <br/>
+                            with great user experiences
+                        </h2>
+                        <h2>
+                            Precise and decent backend database structure
+                            <br/>
+                            with 100% enthusiasm
+                        </h2>
+                        <div className='Content_1_module1_Left_Words'>
+                            <span>Front end developer who writes clean, elegant and efficient codes</span>
+                            <br/>
+                            <span>Back end developer specialising structural backend data system </span>
+                        </div>
+                    </div>
+
+                    <div className='Content_1_module1_Middle'>
+                        {/*    my photo*/}
+                        <img src={me} alt="" width='260px' height='380px'/>
+                    </div>
+
+                    <div className='Content_1_module1_Right'>
+                        {/*<AutoAwesomeMotionIcon/>*/}
                         <br/>
-                        <span>Back end developer specialising structural backend data system </span>
+                        {['Click to See More Info'].map((anchor) => (
+                            <React.Fragment key={anchor}>
+                                <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+                                <SwipeableDrawer
+                                    anchor={anchor}
+                                    open={state[anchor]}
+                                    onClose={toggleDrawer(anchor, false)}
+                                    onOpen={toggleDrawer(anchor, true)}
+                                >
+                                    {list(anchor)}
+                                </SwipeableDrawer>
+                            </React.Fragment>
+                        ))}
+                        {/*    a list of collapse with my project, portfolio, contact inside*/}
+                    </div>
+                    <div className='Content_1_module1_Slide' aria-label='Main Navigation' id='section-nav'>
+                        <ul>
+                            <li>
+                                <button type='button' aria-label='Go to first section. Pitch' onClick={goToTop}
+                                        className='Content_1_module1_Slide_top'>
+                                    Back to top
+                                </button>
+                            </li>
+                            {/*<li>*/}
+                            {/*    <button type='button' aria-label='Go to second section. Pitch' onClick={goToTop} className='Content_module1_Slide_second'>*/}
+
+                            {/*    </button>*/}
+                            {/*</li>*/}
+
+                        </ul>
+
                     </div>
                 </div>
-
-                <div className='Content_module1_Middle'>
-                    {/*    my photo*/}
-                    <img src={me} alt="" width='260px' height='380px'/>
-                </div>
-
-                <div className='Content_module1_Right'>
-                    <AutoAwesomeMotionIcon/>
-                    <br/>
-                    {['Click to See More Info'].map((anchor) => (
-                        <React.Fragment key={anchor}>
-                            <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
-                            <SwipeableDrawer
-                                anchor={anchor}
-                                open={state[anchor]}
-                                onClose={toggleDrawer(anchor, false)}
-                                onOpen={toggleDrawer(anchor, true)}
-                            >
-                                {list(anchor)}
-                            </SwipeableDrawer>
-                        </React.Fragment>
-                    ))}
-                    {/*    a list of collapse with my project, portfolio, contact inside*/}
-                </div>
-                <div className='Content_module1_Slide' aria-label='Main Navigation' id='section-nav'>
-                    <ul>
-                        <li>
-                            <button type='button' aria-label='Go to first section. Pitch' onClick={goToTop}
-                                    className='Content_module1_Slide_top'>
-                                Back to top
-                            </button>
-                        </li>
-                        {/*<li>*/}
-                        {/*    <button type='button' aria-label='Go to second section. Pitch' onClick={goToTop} className='Content_module1_Slide_second'>*/}
-
-                        {/*    </button>*/}
-                        {/*</li>*/}
-
-                    </ul>
+                <div className='Content_1_moduleMid'>
 
                 </div>
             </div>
+
+
             <div>
 
 

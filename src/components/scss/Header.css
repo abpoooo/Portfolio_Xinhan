@@ -1,9 +1,10 @@
 .Header {
   display: flex;
-  background-color: #e1dad9;
-  color: #4d3a59;
+  background-color: #45465e;
+  color: #e1dad9;
   flex-direction: row;
   justify-content: space-around;
+  min-width: 100vw;
 }
 @keyframes fadeIn {
   0% {
@@ -35,7 +36,7 @@
 .Header_content ul li {
   display: flex;
   font-weight: bold;
-  color: #4d3a59;
+  color: #fdeddd;
   line-height: 92px;
   padding: 0 1em;
   text-decoration: none;

@@ -218,6 +218,8 @@
   margin-bottom: 70px;
   line-height: 2;
   border-radius: 5px;
+  color: #45465e;
+  background-color: #f8f5d6;
 }
 .Contact_Main_Bottom_Right {
   display: flex;
@@ -229,6 +231,8 @@
   margin-bottom: 50px;
   line-height: 1.5;
   border-radius: 5px;
+  color: #45465e;
+  background-color: #f8f5d6;
 }
 .Contact_Main_Bottom_Right_Message {
   font-size: 1.8rem;
@@ -237,6 +241,8 @@
   line-height: 1.5;
   border-radius: 10px;
   font-weight: bold;
+  color: #45465e;
+  background-color: #f8f5d6;
 }
 .Contact_Main_Bottom_Right_Submit {
   float: right;
@@ -244,7 +250,7 @@
   padding: 0 1.5em;
   font-family: "proxima nova semibold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
   color: #ffffff;
-  background-color: #333333;
+  background-color: #45465e;
   font-size: 1.8rem;
   border: #333333 solid 1px;
   vertical-align: middle;

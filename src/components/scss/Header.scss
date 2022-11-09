@@ -1,14 +1,15 @@
 
 .Header {
   display: flex;
-  background-color: #e1dad9;
-  color: #4d3a59;
+  background-color: #45465e;
+  color: #e1dad9;
   flex-direction: row;
   justify-content: space-around;
   //position: -webkit-sticky; /* Safari */
   //position: absolute;
   //position: sticky;
   //top: 0;
+  min-width: 100vw;
 
   @keyframes fadeIn {
     0% {
@@ -52,7 +53,7 @@
       li {
         display: flex;
         font-weight: bold;
-        color: #4d3a59;
+        color: #fdeddd;
         line-height: 92px;
         padding: 0 1em;
         text-decoration: none;
@@ -91,6 +92,7 @@
     position: relative;
     height: 92px;
     border: 0px;
+
   }
 
   .iconSize {
