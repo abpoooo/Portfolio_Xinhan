@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="App">
             {/*<BrowserRouter>*/}
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter basename= '/'>
                 <Routes>
                     <Route path='/' element={<Home/>}></Route>
                     <Route path='/about' element={<About/>}></Route>
