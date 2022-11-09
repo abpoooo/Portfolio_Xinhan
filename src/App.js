@@ -11,7 +11,7 @@ function App() {
     return (
         <div className="App">
             {/*<BrowserRouter>*/}
-            <HashRouter basename= '/Portfolio_Xinhan'>
+            {/*<HashRouter basename= '/Portfolio_Xinhan'>*/}
                 <Routes>
                     <Route path='/' element={<Home/>}></Route>
                     <Route path='/about' element={<About/>}></Route>
@@ -19,7 +19,7 @@ function App() {
                     <Route path='/contact' element={<Contact/>}></Route>
                     <Route path='/city' element={<CityView/>}></Route>
                 </Routes>
-            </HashRouter>
+            {/*</HashRouter>*/}
             {/*</BrowserRouter>*/}
         </div>
     );
