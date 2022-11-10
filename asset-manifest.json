@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_Xinhan/static/css/main.bfa8612e.css",
-    "main.js": "/Portfolio_Xinhan/static/js/main.8eb8d539.js",
+    "main.css": "/Portfolio_Xinhan/static/css/main.be13a299.css",
+    "main.js": "/Portfolio_Xinhan/static/js/main.14f965d1.js",
     "static/media/ekko.jpg": "/Portfolio_Xinhan/static/media/ekko.c63e4e9bd13cae83fe1e.jpg",
     "static/media/rolling.gif": "/Portfolio_Xinhan/static/media/rolling.d7031393bddd4cb9bb35.gif",
     "static/media/city.jpg": "/Portfolio_Xinhan/static/media/city.4c3c87ee173525c8c819.jpg",
@@ -12,11 +12,11 @@
     "static/media/wallpaper.jpg": "/Portfolio_Xinhan/static/media/wallpaper.9c76dae3c0adf2862b87.jpg",
     "static/media/logo.svg": "/Portfolio_Xinhan/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio_Xinhan/index.html",
-    "main.bfa8612e.css.map": "/Portfolio_Xinhan/static/css/main.bfa8612e.css.map",
-    "main.8eb8d539.js.map": "/Portfolio_Xinhan/static/js/main.8eb8d539.js.map"
+    "main.be13a299.css.map": "/Portfolio_Xinhan/static/css/main.be13a299.css.map",
+    "main.14f965d1.js.map": "/Portfolio_Xinhan/static/js/main.14f965d1.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfa8612e.css",
-    "static/js/main.8eb8d539.js"
+    "static/css/main.be13a299.css",
+    "static/js/main.14f965d1.js"
   ]
 }
