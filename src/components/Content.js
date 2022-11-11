@@ -5,7 +5,7 @@ import * as THREE from 'three'
 import {Canvas, useFrame} from '@react-three/fiber'
 import {Text, TrackballControls} from '@react-three/drei'
 import Collapse from '@material-ui/core/Collapse';
-
+import './scss/bear.scss'
 import {makeStyles} from '@material-ui/core/styles';
 import React from 'react';
 import clsx from 'clsx';
@@ -27,6 +27,7 @@ import TagCloud from "TagCloud";
 // import {TagCloud} from 'react-tagcloud'
 import randomColor from 'randomcolor';
 import randomWord from 'random-words'
+import css from '../css.jpg'
 
 
 export const Content = () => {
@@ -117,22 +118,34 @@ export const Content = () => {
         'MYSQL', 'NODE.JS', 'EXPRESS',
         'JQUERY', 'MCMASTER', 'WESTERN', 'MATLAB'
     ]
-    TagCloud('.sphere', Texts, {
-        // radius in px
-        radius: 300,
-        // animation speed
-        // slow, normal, fast
-        maxSpeed: 'normal',
-        initSpeed: 'normal',
-        // 0 = top
-        // 90 = left
-        // 135 = right-bottom
-        direction: 135,
-        // interact with cursor move on mouse out
-        keep: true
-    })
+    useEffect(() => {
+        let tagCloud = TagCloud('.sphere', Texts, {
+            // radius in px
+            radius: 300,
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'normal',
+            initSpeed: 'normal',
+            // 0 = top
+            // 90 = left
+            // 135 = right-bottom
+            direction: 135,
+            // interact with cursor move on mouse out
+            keep: true,
+            collocations: false,
+            color: randomColor()
+        })
+    }, [])
 
 
+    const skills = [
+        'HTML5', 'Javascript', 'Scss', 'Matlab', 'Docker',
+        'CSS', 'Python', 'Java', 'PostgreSQL', 'Git',
+        'Redux', 'Linux', 'React', 'Redis',
+        'NodeJS', 'Airflow',
+    ]
+
+    // const randomColor = Math.floor(Math.random()*16777215).toString(16)
     function Word({children, ...props}) {
         const color = new THREE.Color()
         const fontProps = {
@@ -156,21 +169,45 @@ export const Content = () => {
             // Make text face the camera
             ref.current.quaternion.copy(camera.quaternion)
             // Animate font color
-            ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : 'white'), 0.1)
+            ref.current.material.color.lerp(color.set(hovered ? '#fa2720' : '#45465e'), 0.1)
         })
         return <Text ref={ref} onPointerOver={over} onPointerOut={out}
                      onClick={() => console.log('clicked')} {...props} {...fontProps} children={children}/>
     }
 
-    function Cloud({count = 4, radius = 100}) {
+
+    function Cloud({count = 3, radius = 20}) {
         // Create a count x count random words with spherical distribution
         const words = useMemo(() => {
+            const words = [
+                'JAVA',
+                'F-END',
+                'B-END',
+                "FS",
+                'MYSQL',
+                'JS',
+                'CSS',
+                'SASS',
+                'DOCKER',
+                'HTML',
+                'JQUERY'
+            ]
+
+            // const randWords = () =>{
+            //     let result = []
+            //     for (let i = 0; i<words.length; i++){
+            //         result += words[Math.floor(Math.random()*words.length)]
+            //     }
+            //     return result
+            // //    words[Math.floor(Math.random()*words.length)]
+            // }
+            const randomWords = words[Math.floor(Math.random() * words.length)]
             const temp = []
             const spherical = new THREE.Spherical()
             const phiSpan = Math.PI / (count + 1)
             const thetaSpan = (Math.PI * 2) / count
             for (let i = 1; i < count + 1; i++)
-                for (let j = 0; j < count; j++) temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), randomWord()])
+                for (let j = 0; j < count; j++) temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), skills[i + j]])
             return temp
         }, [count, radius])
         return words.map(([pos, word], index) => <Word key={index} position={pos} children={word}/>)
@@ -188,6 +225,26 @@ export const Content = () => {
             })
         }
     }
+
+    //
+    // tag cloud words
+    // const CloudItem = (props) => (
+    //     <div {...props} className="tag-item-wrapper">
+    //         <div>{props.text}</div>
+    //         <div className="tag-item-tooltip">HOVERED!</div>
+    //     </div>
+    // );
+
+    const styles = {
+        large: {
+            fontSize: 60,
+            fontWeight: 'bold'
+        },
+        small: {
+            opacity: 0.7,
+            fontSize: 16
+        }
+    };
 
 
     return (
@@ -214,6 +271,13 @@ export const Content = () => {
                             <br/>
                             <span>Back end developer specialising structural backend data system </span>
                         </div>
+                        <Canvas className='Content_2_moduleDown' style={{height: '600px', width: '555px', fontSize: '12px', color: "transparent"}}
+                                dpr={[1, 2]}
+                                camera={{position: [0, 0, 35], fov: 90}}>
+                            <fog attach="fog" args={['#202025', 0, 80]}/>
+                            <Cloud count={8} radius={20}/>
+                            <TrackballControls/>
+                        </Canvas>
                     </div>
 
                     {/*<div className='Content_1_module1_Middle'>*/}
@@ -238,8 +302,26 @@ export const Content = () => {
                                 </SwipeableDrawer>
                             </React.Fragment>
                         ))}
+                        <div className="col-8" id="bear-id">
+                            <div className="bear">
+                                <div className="bear__ears">
+                                    <div className="bear__ears__left ear"></div>
+                                    <div className="bear__ears__right ear"></div>
+                                </div>
+                                <div className="bear__body">
+                                    <div className="bear__eyes">
+                                        <div className="bear__eyes--left eye"></div>
+                                        <div className="bear__eyes--right eye"></div>
+                                    </div>
+                                    <div className="bear__nose">
+                                        <div className="bear__nose--inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="shadow"></div>
+                        </div>
 
-                        <span className='.canvas'></span>
+                        {/*<span className='.canvas'></span>*/}
 
 
                     </div>
@@ -262,12 +344,7 @@ export const Content = () => {
                     </div>
                 </div>
                 <div className='Content_1_moduleMid'>
-                    <Canvas className='Content_2_moduleDown' style={{height: '1000px', width: '975px'}} dpr={[1, 2]}
-                            camera={{position: [0, 0, 35], fov: 90}}>
-                        <fog attach="fog" args={['#202025', 0, 80]}/>
-                        <Cloud count={8} radius={20}/>
-                        <TrackballControls/>
-                    </Canvas>
+
                 </div>
             </div>
 
@@ -333,7 +410,9 @@ export const Content = () => {
                     </div>
                     {/*<div className='Content_2_moduleDown'>*/}
                     <div className='sphere'>
-
+                        <h2 style={{fontFamily:'cursive', color: '#c01916'}}>
+                            My Skills And My Education
+                        </h2>
                     </div>
 
                     {/*<TagCloud*/}
