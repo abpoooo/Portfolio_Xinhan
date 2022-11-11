@@ -13,12 +13,12 @@ root.render(
     <Provider store={store}>
         {/*<React.StrictMode>*/}
         <BrowserRouter>
-            <StrictMode>
+            {/*<StrictMode>*/}
 
 
         {/*<HashRouter basename={process.env.PUBLIC_URL}>*/}
         {/*<BrowserRouter basename={process.env.PUBLIC_URL}>*/}
-            </StrictMode>
+        {/*    </StrictMode>*/}
             <App/>
         {/*</HashRouter>*/}
         </BrowserRouter>
