@@ -17,11 +17,12 @@ root.render(
 
 
         {/*<HashRouter basename={process.env.PUBLIC_URL}>*/}
-        {/*<BrowserRouter basename={process.env.PUBLIC_URL}>*/}
+        {/*next line is for deploy*/}
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
         {/*    </StrictMode>*/}
             <App/>
         {/*</HashRouter>*/}
-        {/*</BrowserRouter>*/}
+        </BrowserRouter>
         {/*</BrowserRouter>*/}
         {/*</React.StrictMode>*/}
     </Provider>
