@@ -60,10 +60,14 @@
 .Content_1_module1_Right {
   align-items: center;
   font-size: 80px;
-  padding-top: 20vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 10vw;
+}
+.Content_1_module1_Right img {
+  width: 100%;
+  height: auto;
 }
 .Content_1_module1_Right .canvas {
   height: 30vh;
@@ -119,7 +123,7 @@
 }
 .Content_1_module1_Slide .tag-item-wrapper {
   cursor: pointer;
-  color: 0.6205177715;
+  color: 0.1805045432;
 }
 .Content_1_module1_Slide .tag-item-wrapper:hover {
   z-index: 100;

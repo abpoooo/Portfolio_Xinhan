@@ -6,6 +6,7 @@ import {About} from "./components/About";
 import {Portfolio} from "./components/Portfolio";
 import {Contact} from "./components/Contact";
 import CityView from "./components/CityView/CityView";
+import Swiper1 from "./components/Swiper1";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path='/portfolio' element={<Portfolio/>}></Route>
                     <Route path='/contact' element={<Contact/>}></Route>
                     <Route path='/city' element={<CityView/>}></Route>
+                    <Route path='/swipe' element={<Swiper1/>}></Route>
                 </Routes>
             {/*</HashRouter>*/}
             {/*</BrowserRouter>*/}

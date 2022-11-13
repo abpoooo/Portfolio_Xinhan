@@ -25,9 +25,11 @@ import {FaAngleUp} from 'react-icons/fa';
 import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 import TagCloud from "TagCloud";
 // import {TagCloud} from 'react-tagcloud'
+import banff from '../banff.jpg'
 import randomColor from 'randomcolor';
 import randomWord from 'random-words'
 import css from '../css.jpg'
+import Photo from "./Photo";
 
 
 export const Content = () => {
@@ -254,6 +256,8 @@ export const Content = () => {
                     <div className='Content_1_module1_Left'>
                         {/*    my intro*/}
                         <h1 className='alpha' onMouseEnter={() => alpha()}>
+                            Xinhan Yang
+                            <br/>
                             Full Stack Developer
                         </h1>
                         <h2>
@@ -287,7 +291,7 @@ export const Content = () => {
 
                     <div className='Content_1_module1_Right'>
                         {/*<AutoAwesomeMotionIcon/>*/}
-                        <img src={me} alt="" width='150px' height='230px'/>
+                        <Photo/>
                         <br/>
                         {['Click to See More Info'].map((anchor) => (
                             <React.Fragment key={anchor}>

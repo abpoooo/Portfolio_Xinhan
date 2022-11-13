@@ -4,14 +4,15 @@
 }
 .Portfolio_Main {
   clear: both;
-  min-height: 50vh;
-  padding: 0 3rem 4.3rem 4.3rem;
+  min-height: 100vh;
   display: flex;
+  margin-top: 60vh;
   flex-direction: column;
 }
 .Portfolio_Main_Top {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-content: center;
   margin-top: 100px;
   gap: 100px;
@@ -70,8 +71,10 @@
 @media screen and (max-height: 830px) {
   .Portfolio_Main_Top {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    padding-left: 100px;
   }
   .Portfolio_Main_Top_Left {
     padding: 0;
@@ -102,11 +105,20 @@
     background-color: rgba(255, 255, 255, 0.6);
   }
 }
+.Portfolio_Main a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 2rem 4.3rem;
+  color: #4831d4;
+  font-size: 28px;
+  text-decoration: none;
+}
 .Portfolio_Main_Bottom {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 5.6rem 4.3rem;
 }
 .Portfolio_Main_Bottom img {
@@ -118,6 +130,12 @@
   padding: 10px;
   opacity: 0.9;
   background-color: rgba(255, 255, 255, 0.6);
+  background-clip: padding-box;
+  max-width: 100%;
+  width: 700px;
+  position: relative;
+  height: auto;
+  margin: 0 50px;
 }
 .Portfolio_Main_Bottom img:hover {
   cursor: pointer;
@@ -134,24 +152,42 @@
   font-weight: bold;
   align-content: center;
 }
+.Portfolio_Main_Bottom .main-swiper {
+  margin: 40px 0;
+}
+.Portfolio_Main_Bottom .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Portfolio_Main_Bottom .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.Portfolio_Main_Bottom .swiper-slide img {
+  display: block;
+  width: 100%;
+}
 .Portfolio_Main_Bottom_City img {
   background-clip: padding-box;
   max-width: 100%;
-  width: 500px;
+  width: 30vw;
   position: relative;
   height: auto;
 }
 .Portfolio_Main_Bottom_Music img {
   background-clip: padding-box;
   max-width: 100%;
-  width: 430px;
+  width: 30vw;
   position: relative;
   height: auto;
 }
 .Portfolio_Main_Bottom_LuLu img {
   background-clip: padding-box;
   max-width: 100%;
-  width: 400px;
+  width: 30vw;
   position: relative;
   height: auto;
 }

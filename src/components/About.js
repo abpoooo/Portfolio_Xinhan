@@ -12,14 +12,12 @@ export const About = () => {
         <div className='AboutMe'>
             <Header/>
             <div className='AboutMe_Main'>
-                <div className='AboutMe_Main_Left'>
+                <div className='AboutMe_Main_Left' id='intro-text'>
                     <h1>
                         About Me
                     </h1>
-                    <h2>
-                        I'm a Full Stack Developer
-                        <br/>
-                        based in Great Toronto Area, ON, Canada
+                    <h2 className='anim anim-typewriter2 anim-glow' >
+                        I'm a <span className='select-me anim-oops'>pianist</span>Full Stack Developer based in Great Toronto Area, ON, Canada
                     </h2>
                     <p align='middle'>
                         Since 2021, graduated from

@@ -86,11 +86,16 @@
         align-items: center;
         //padding-top: 3.0rem;
         font-size: 80px;
-        padding-top: 20vh;
+        //padding-top: 20vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 10vw;
 
+        img{
+          width: 100%;
+          height: auto;
+        }
         .canvas{
           height: 30vh;
           width: 30vw;
