@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import './scss/Header.scss'
-import BurgerHeader from "./Iphone12/BurgerHeader";
+import BurgerHeader, {Navigate} from "./Iphone12/BurgerHeader";
 
 export const Header = () => {
 
@@ -58,7 +58,7 @@ export const Header = () => {
 
             <div className='burger'>
 
-                <BurgerHeader/>
+                <Navigate/>
             </div>
         </div>
 
