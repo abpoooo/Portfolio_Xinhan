@@ -12,13 +12,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
         {/*<React.StrictMode>*/}
-        {/*<BrowserRouter>*/}
+        <BrowserRouter>
             {/*<StrictMode>*/}
 
 
         {/*<HashRouter basename={process.env.PUBLIC_URL}>*/}
         {/*next line is for deploy*/}
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        {/*<BrowserRouter basename={process.env.PUBLIC_URL}>*/}
         {/*    </StrictMode>*/}
             <App/>
         {/*</HashRouter>*/}

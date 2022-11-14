@@ -85,6 +85,10 @@
   .burger {
     display: block;
   }
+  .burger .iconSize {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */

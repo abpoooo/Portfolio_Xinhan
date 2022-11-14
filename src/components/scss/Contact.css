@@ -24,6 +24,14 @@
   width: 600px;
   height: 450px;
 }
+@media screen and (max-width: 390px) {
+  .Contact_Main_Top_Right img {
+    width: 400px;
+    height: 300px;
+    padding: 0 200px;
+    margin: 0 200px;
+  }
+}
 .Contact_Main_Top_Left {
   margin: 0 8rem;
 }
@@ -39,6 +47,20 @@
   flex-wrap: wrap;
   align-items: flex-start;
 }
+@media screen and (max-width: 390px) {
+  .Contact_Main_Top_Left h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #333333;
+    text-rendering: optimizelegibility;
+    font-weight: bold;
+    font-family: "proxima nova bold", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .Contact_Main_Top_Left h3 {
   font-size: 1.5rem;
   color: #757575;
@@ -46,6 +68,17 @@
   overflow-wrap: break-word;
   vertical-align: bottom;
   background: transparent;
+}
+@media screen and (max-width: 390px) {
+  .Contact_Main_Top_Left h3 {
+    font-size: 1.2rem;
+    color: #757575;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+    vertical-align: bottom;
+    background: transparent;
+    padding-left: 50px;
+  }
 }
 .Contact_Main_Top_Left_icons {
   margin: 50px auto;
@@ -137,7 +170,7 @@
   font-size: 20px;
   font-weight: bold;
   color: #43609c;
-  padding-top: 10px;
+  padding: 10px;
 }
 .Contact_Main_Top_Left_icons .ul2 li a.facebook img {
   height: 60px;
@@ -243,6 +276,20 @@
   font-weight: bold;
   color: #45465e;
   background-color: #f8f5d6;
+}
+@media screen and (max-width: 390px) {
+  .Contact_Main_Bottom_Right_Message {
+    color: #45465e;
+    background-color: #f8f5d6;
+    border-radius: 10px;
+    font-weight: bold;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0 200px;
+    margin: 0 50px 100px 100px;
+  }
 }
 .Contact_Main_Bottom_Right_Submit {
   float: right;

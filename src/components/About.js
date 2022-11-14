@@ -17,10 +17,12 @@ export const About = () => {
                         About Me
                     </h1>
                     <h2 className='anim anim-typewriter2 anim-glow' >
-                        I'm a <span className='select-me anim-oops'>pianist</span>Full Stack Developer based in Great Toronto Area, ON, Canada
+                        I'm a <span className='select-me anim-oops'>Electrical Engineer </span> Full Stack Developer in Toronto
                     </h2>
                     <p align='middle'>
-                        Since 2021, graduated from
+                        Since 2021,
+                        <br/>
+                        graduated from
                         Western University from Master of Engineering,
                         <br/>
                         I've enjoyed turning complex problems into simple,
@@ -31,14 +33,14 @@ export const About = () => {
                     </p>
                 </div>
                 <div className='AboutMe_Main_Right'>
-                    <img src={roll} alt="" width='600px' height='450px'/>
+                    <img src={roll} alt=""/>
                 </div>
 
 
             </div>
             <div className='AboutMe_Bottom'>
                 <div className='AboutMe_Bottom_Left'>
-                    <img className='flash' src={ekko} alt="" width='700px' height='auto'/>
+                    <img className='flash' src={ekko} alt="" />
 
                 </div>
                 <div className='AboutMe_Bottom_Right'>

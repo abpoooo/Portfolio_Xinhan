@@ -50,7 +50,7 @@ export const Header = () => {
                 </div>
                 <div className='Header_icons'>
                     <a href="https://www.linkedin.com/in/xinhan-yang-2b6938194/"><LinkedInIcon
-                        className='iconSize'/></a>
+                        className='iconSize' width='2rem' height='2rem'/></a>
                     <a href="https://www.instagram.com/abpooooo/"><InstagramIcon className='iconSize'/></a>
                     <a href="https://github.com/abpoooo"><GitHubIcon className='iconSize'/></a>
                 </div>

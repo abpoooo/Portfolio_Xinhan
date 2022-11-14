@@ -123,5 +123,10 @@
   }
   .burger{
     display: block;
+
+    .iconSize{
+      height: 40px;
+      width: 40px;
+    }
   }
 }
