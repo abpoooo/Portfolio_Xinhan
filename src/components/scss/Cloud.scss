@@ -32,6 +32,11 @@
 
 .tag-cloud {
   flex: 1;
+  
+  @media screen  and (max-width: 390px){
+    width: 400px;
+    height: 400px;
+  }
 }
 
 .tag-cloud > div {

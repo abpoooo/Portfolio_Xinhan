@@ -33,6 +33,12 @@
 .tag-cloud {
   flex: 1;
 }
+@media screen and (max-width: 390px) {
+  .tag-cloud {
+    width: 400px;
+    height: 400px;
+  }
+}
 
 .tag-cloud > div {
   transition: 1.4s;

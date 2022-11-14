@@ -7,6 +7,7 @@ import {Portfolio} from "./components/Portfolio";
 import {Contact} from "./components/Contact";
 import CityView from "./components/CityView/CityView";
 import Swiper1 from "./components/Swiper1";
+import BurgerHeader from "./components/Iphone12/BurgerHeader";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                     <Route path='/contact' element={<Contact/>}></Route>
                     <Route path='/city' element={<CityView/>}></Route>
                     <Route path='/swipe' element={<Swiper1/>}></Route>
+                    <Route path='/burger' element={<BurgerHeader/>}></Route>
                 </Routes>
             {/*</HashRouter>*/}
             {/*</BrowserRouter>*/}

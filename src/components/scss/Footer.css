@@ -29,4 +29,22 @@
   font-weight: bold;
 }
 
+@media screen and (max-width: 390px) {
+  .footer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .footer ul {
+    margin-bottom: 30px;
+    display: inline-block;
+    align-content: center;
+  }
+  .footer_name {
+    font-weight: normal;
+  }
+}
+
 /*# sourceMappingURL=Footer.css.map */

@@ -1,3 +1,7 @@
+.burger {
+  display: none;
+}
+
 .Header {
   display: flex;
   background-color: #45465e;
@@ -62,14 +66,25 @@
   position: relative;
   height: 92px;
   border: 0px;
+  color: white;
 }
 .Header .iconSize {
   height: 60px;
   width: 40px;
+  color: white;
 }
 .Header .iconSize:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 390px) {
+  .Header {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=Header.css.map */
