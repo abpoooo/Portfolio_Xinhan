@@ -29,6 +29,21 @@
     padding-left: 35vw;
   }
 }
+@media screen and (max-width: 428px) {
+  .cardfan img {
+    position: absolute;
+    width: 50%;
+    padding-right: -10vw;
+    height: auto;
+    border: 12px solid #ffe;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.2);
+    transform-origin: center 400px;
+    transition: all 1s linear;
+    display: flex;
+    justify-content: center;
+    padding-left: 35vw;
+  }
+}
 .cardfan img:first-child {
   transform: rotate(5deg);
 }

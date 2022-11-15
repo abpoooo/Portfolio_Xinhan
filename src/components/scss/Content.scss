@@ -53,6 +53,14 @@
             justify-content: center;
             //padding-left: 10vw;
           }
+          @media screen and (max-width: 428px) {
+            font-size: 40px;
+            line-height: 1;
+            margin: 100px 0 30px 0;
+            display: flex;
+            justify-content: center;
+            //padding-left: 10vw;
+          }
         }
 
         h1.alpha.animated {
@@ -65,6 +73,17 @@
           font-size: 30px;
           line-height: 1;
           @media screen and (max-width: 390px) {
+
+            font-size: 20px;
+            line-height: 2;
+            display: flex;
+            justify-content: center;
+            padding: 0 20vw;
+            margin: 0 20vw;
+
+          }
+
+          @media screen and (max-width: 428px) {
 
             font-size: 20px;
             line-height: 2;
@@ -127,6 +146,16 @@
         margin-left: 10vw;
 
         @media screen and (max-width: 390px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0;
+
+          img {
+            width: 50%;
+          }
+        }
+        @media screen and (max-width: 428px) {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -385,6 +414,16 @@
           gap: 10vw;
         }
       }
+      @media screen and (max-width: 428px) {
+        &_module2 {
+          display: flex;
+          flex-direction: column;
+          min-height: 50vh;
+          justify-content: space-around;
+          padding-top: 10rem;
+          gap: 10vw;
+        }
+      }
 
 
       h1 {
@@ -396,6 +435,16 @@
         color: #45465e;
 
         @media screen and (max-width: 390px) {
+          margin: 0;
+          font-size: 60px;
+          font-weight: 900;
+          line-height: 1.1;
+          letter-spacing: -0.03em;
+          color: #45465e;
+          display: flex;
+          justify-content: center;
+        }
+        @media screen and (max-width: 428px) {
           margin: 0;
           font-size: 60px;
           font-weight: 900;
@@ -449,6 +498,118 @@
     display: none;
   }
   .Media {
+    display: flex;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    flex-direction: column;
+
+    &_1 {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 30px 0;
+      padding: 0;
+
+      &_module1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &_Left {
+          display: flex;
+          flex-direction: column;
+
+          &_Words{
+            span{
+              max-width: 701px;
+              font-size: 1.07em;
+              -webkit-transition-delay: 310ms;
+              transition-delay: 310ms;
+              line-height: 1.6;
+              color: #3d155f;
+              display: flex;
+              align-content: center;
+              margin-block-start: 1em;
+              margin-block-end: 1em;
+              justify-content: center;
+              padding: 0 20vw;
+              margin: 0 20vw;
+            }
+          }
+
+        }
+      }
+    }
+
+    &_2 {
+      display: flex;
+      flex-direction: column;
+      //justify-content: center;
+      //min-height: 100vh;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+
+      &_module2 {
+        display: flex;
+        flex-direction: column;
+        //min-height: 50vh;
+        justify-content: center;
+        padding-top: 10rem;
+        gap: 10vw;
+
+        h1 {
+          margin: 0;
+          font-size: 60px;
+          font-weight: 900;
+          line-height: 1.1;
+          letter-spacing: -0.03em;
+          color: #45465e;
+          display: flex;
+          justify-content: center;
+        }
+
+        &_Left {
+          display: block;
+          align-items: center;
+
+        }
+
+        p {
+          //padding-top: 50px;
+          max-width: 701px;
+          font-size: 1.07em;
+          -webkit-transition-delay: 310ms;
+          transition-delay: 310ms;
+          line-height: 1.6;
+          color: #3d155f;
+          display: flex;
+          align-content: center;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          justify-content: center;
+          padding: 5vh 20vw;
+          margin: 0 20vw;
+        }
+
+        .svg{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 428px) {
+  .Content {
+    display: none;
+  }
+  .Media {
+    h2{
+      display: flex;
+      justify-content: center;
+    }
     display: flex;
     margin: 0;
     position: relative;

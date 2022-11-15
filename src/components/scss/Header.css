@@ -90,5 +90,17 @@
     width: 40px;
   }
 }
+@media screen and (max-width: 428px) {
+  .Header {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger .iconSize {
+    height: 40px;
+    width: 40px;
+  }
+}
 
 /*# sourceMappingURL=Header.css.map */

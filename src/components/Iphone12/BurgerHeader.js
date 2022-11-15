@@ -24,7 +24,7 @@ class BurgerHeader extends React.Component {
             <div className='burger'>
 
                 <Menu right>
-                    {/*<a id="home" className="menu-item" href="/">Home    <img src={home} alt="" width='50px' height='50px'/></a>*/}
+                    <a id="home" className="menu-item" href="/">Home    <img src="https://i.pinimg.com/originals/b9/e3/8c/b9e38cb331502265ced6a64c414dff3f.jpg" alt="" width='40px' height='40px'/></a>
 
                     <a id="about" className="menu-item" onClick={() => this.props.navigate('/about')} >About                     <svg className="bi bi-person-fill hover" width="2em" height="2em" viewBox="0 0 20 20"
                                                                                                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">

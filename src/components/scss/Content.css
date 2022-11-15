@@ -43,6 +43,15 @@
     justify-content: center;
   }
 }
+@media screen and (max-width: 428px) {
+  .Content_1_module1_Left h1.alpha {
+    font-size: 40px;
+    line-height: 1;
+    margin: 100px 0 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
 .Content_1_module1_Left h1.alpha.animated {
   color: #ff6347;
   animation: ani 0.7s ease-in-out 1;
@@ -52,6 +61,16 @@
   line-height: 1;
 }
 @media screen and (max-width: 390px) {
+  .Content_1_module1_Left h2 {
+    font-size: 20px;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0 20vw;
+    margin: 0 20vw;
+  }
+}
+@media screen and (max-width: 428px) {
   .Content_1_module1_Left h2 {
     font-size: 20px;
     line-height: 2;
@@ -94,6 +113,17 @@
   margin-left: 10vw;
 }
 @media screen and (max-width: 390px) {
+  .Content_1_module1_Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  .Content_1_module1_Right img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 428px) {
   .Content_1_module1_Right {
     display: flex;
     flex-direction: column;
@@ -162,7 +192,7 @@
 }
 .Content_1_module1_Slide .tag-item-wrapper {
   cursor: pointer;
-  color: 0.690107443;
+  color: 0.0876929189;
 }
 .Content_1_module1_Slide .tag-item-wrapper:hover {
   z-index: 100;
@@ -303,6 +333,16 @@
     gap: 10vw;
   }
 }
+@media screen and (max-width: 428px) {
+  .Content_2_module2_module2 {
+    display: flex;
+    flex-direction: column;
+    min-height: 50vh;
+    justify-content: space-around;
+    padding-top: 10rem;
+    gap: 10vw;
+  }
+}
 .Content_2_module2 h1 {
   margin: 0;
   font-size: 4em;
@@ -312,6 +352,18 @@
   color: #45465e;
 }
 @media screen and (max-width: 390px) {
+  .Content_2_module2 h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #45465e;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 428px) {
   .Content_2_module2 h1 {
     margin: 0;
     font-size: 60px;
@@ -355,6 +407,98 @@
     position: relative;
     padding: 0;
     flex-direction: column;
+  }
+  .Media_1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+  .Media_1_module1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Media_1_module1_Left {
+    display: flex;
+    flex-direction: column;
+  }
+  .Media_1_module1_Left_Words span {
+    max-width: 701px;
+    font-size: 1.07em;
+    -webkit-transition-delay: 310ms;
+    transition-delay: 310ms;
+    line-height: 1.6;
+    color: #3d155f;
+    display: flex;
+    align-content: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    justify-content: center;
+    padding: 0 20vw;
+    margin: 0 20vw;
+  }
+  .Media_2 {
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+  }
+  .Media_2_module2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10rem;
+    gap: 10vw;
+  }
+  .Media_2_module2 h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #45465e;
+    display: flex;
+    justify-content: center;
+  }
+  .Media_2_module2_Left {
+    display: block;
+    align-items: center;
+  }
+  .Media_2_module2 p {
+    max-width: 701px;
+    font-size: 1.07em;
+    -webkit-transition-delay: 310ms;
+    transition-delay: 310ms;
+    line-height: 1.6;
+    color: #3d155f;
+    display: flex;
+    align-content: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    justify-content: center;
+    padding: 5vh 20vw;
+    margin: 0 20vw;
+  }
+  .Media_2_module2 .svg {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 428px) {
+  .Content {
+    display: none;
+  }
+  .Media {
+    display: flex;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    flex-direction: column;
+  }
+  .Media h2 {
+    display: flex;
+    justify-content: center;
   }
   .Media_1 {
     display: flex;
